@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: normal;
+    margin: 10px 0;
+}
+
+section{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner img{
+    -webkit-filter: brightness(65%);
+            filter: brightness(65%);
+}
+
+.banner .mobile-banner{
+    display: none;
+}
+
+.banner__content{
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.equal--height{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature__card{
+    align-items: center;
+    border: solid 2px #e3e3e3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    font-size: 18px;
+    margin-top: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature__card img{
+    margin-bottom: 20px;
+}
+    
+.main__btn{
+    border: solid 2px #000000;
+    border-radius: 30px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    width: 60%;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.main__btn:hover{
+    background: #000000;
+    color: #ffffff;
+}
+
+
+/*----------------------------------------------------------------
+# Media Query
+----------------------------------------------------------------*/
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 767.98px){
+    h1{
+        font-size: 52px;
+    }
+    
+    .desktop-banner{
+        display: none;
+    }
+
+    .mobile-banner{
+        display: block !important;
+    }
+
+    .banner__content{
+        font-size: 18px;
+    }
+
+    .feature__card{
+        margin: 25px 0;
+    }
+}
